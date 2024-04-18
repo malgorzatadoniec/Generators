@@ -7,8 +7,6 @@ let streetNameList = ['Grodzka', '3 Maja', 'Korfantego', 'Młyńska', 'Szewska',
 
 function getAddressData() {
 
-    // let cityNameList = ['Kraków', 'Poznań', 'Wrocław', 'Warszawa', 'Toruń', 'Lublin', 'Bydgoszcz', 'Katowice', 'Gdańsk', 'Gdynia', 'Sopot', 'Chorzów', 'Grodzisk Mazowiedzki', 'Ustrzyki Górne', 'Solina', 'Sosnowiec', 'Trzebinia', 'Grodzisk Mazowiecki', 'Kołobrzeg', 'Szczecin', 'Radom', 'Kielce', 'Węgorzewo', 'Mikołajki', 'Bartoszyce', 'Bytom', 'Proszowice', 'Opatkowice'];
-    // let streetNameList = ['Grodzka', '3 Maja', 'Korfantego', 'Młyńska', 'Szewska', 'Warszawska', 'Pawia', 'Słoneczna', 'Łąkowa', 'Mickiewicza', 'Wietrzna', 'Kościuszki', 'Siemiradzkiego', 'Wesoła', 'Fiołkowa', 'Modrzejewskiej', 'Sienna', 'Senatorska', 'Koło', 'Wrocławska', 'Jagiellońska', 'Stradomska', 'Basztowa', '1 Maja', 'Zamkowa', '29 Listopada', 'Frycza', 'Focha'];
    
     const cityIndex = Math.floor(Math.random() * cityNameList.length);
     const streetIndex = Math.floor(Math.random() * streetNameList.length);

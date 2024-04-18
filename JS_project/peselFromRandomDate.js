@@ -55,8 +55,8 @@ function getPeselFromRandomDate() {
     let addPesel = document.getElementById('newRP')
     addPesel.innerHTML += peselRD
 
-    buttonRP.removeEventListener("click", getAddressData)
     buttonRP.innerHTML = "Odśwież"
+    buttonRP.removeEventListener("click", getPeselFromRandomDate)
     
     buttonRP.addEventListener("click", reload)
 
