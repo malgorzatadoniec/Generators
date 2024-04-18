@@ -42,7 +42,7 @@ function getPeselFromGivenDate(givenDate) {
     let addPesel = document.getElementById('newGD')
     addPesel.innerHTML += peselGD
 
-    buttonGD.removeEventListener("click", getAddressData)
+    buttonGD.removeEventListener("click", getPeselFromGivenDate)
     buttonGD.innerHTML = "Odśwież"
     
     buttonGD.addEventListener("click", reload)
