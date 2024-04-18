@@ -1,3 +1,5 @@
+let buttonGD = document.getElementById("buttonGD")
+
 function getPeselFromGivenDate(givenDate) {
 
     const date = givenDate
@@ -33,7 +35,19 @@ function getPeselFromGivenDate(givenDate) {
     const eleventhNo = controlNo(sum)
 
     // złożenie wszystkich cyfr w PESEL
-    return pesel = firstNo + secondNo + thirdNo + fourthNo + fifthNo + sixthNo
+    const peselGD = firstNo + secondNo + thirdNo + fourthNo + fifthNo + sixthNo
         + seventhNo.toString() + eightNo.toString() + ninthNo.toString()
         + tenthNo.toString() + eleventhNo.toString()
+
+    let addPesel = document.getElementById('newGD')
+    addPesel.innerHTML += peselGD
+
+    buttonGD.removeEventListener("click", getAddressData)
+    buttonGD.innerHTML = "Odśwież"
+    
+    buttonGD.addEventListener("click", reload)
+
+    function reload(){
+        location.reload()
+    }
 }
