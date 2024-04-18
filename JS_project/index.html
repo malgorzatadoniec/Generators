@@ -31,10 +31,10 @@
         <div id="givenDatePesel">
             <span>Generator numeru PESEL z podanej daty</span> 
             <br>
-            <br><button id="buttonGD">Wygeneruj PESEL</button>
-            <br>
             <br><div>Wpisz datę: </div>
-            <input type="text" id="input" placeholder="dd/mm/yyyy">
+            <input type="date" id="dateInput" min="1901-01-01" max="1999-12-31">
+            <br>
+            <br><button onclick="getPeselFromGivenDate(document.getElementById('dateInput').value)" id="buttonGD">Wygeneruj PESEL</button>
             <br>
             <br><div id="newGD">PESEL: </div>
         </div>

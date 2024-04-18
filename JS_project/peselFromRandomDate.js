@@ -48,20 +48,17 @@ function getPeselFromRandomDate() {
 
     // złożenie wszystkich cyfr w PESEL
 
-    const pesel = firstNo + secondNo + thirdNo + fourthNo + fifthNo + sixthNo
+    const peselRD = firstNo + secondNo + thirdNo + fourthNo + fifthNo + sixthNo
         + seventhNo.toString() + eightNo.toString() + ninthNo.toString()
         + tenthNo.toString() + eleventhNo.toString()
 
-    const newPesel = pesel
-
     let addPesel = document.getElementById('newRP')
-    addPesel.innerHTML += pesel
+    addPesel.innerHTML += peselRD
 
-    buttonRP.innerHTML = "Odśwież"
     buttonRP.removeEventListener("click", getAddressData)
-
+    buttonRP.innerHTML = "Odśwież"
+    
     buttonRP.addEventListener("click", reload)
-
 
     function reload(){
         location.reload()
