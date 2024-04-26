@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generatory</title>
+
+</head>
+
+<body>
+    <div id="nameHeader" class="header">
+        <div class="title">GENERATOR IMIENIA I NAZWISKA (dla kobiety i mężczyzny)</div>
+    </div>
+    <div id="nameContainer" class="container">
+        <div id="nameSquare" class="pageSquare">
+            <div id="fullName">
+                <h3>Generator imienia i nazwiska</h3>
+                <label for="gender">Wybierz płeć:</label>
+                <select name="gender" id="gender">
+                    <option value="default" id="default">----</option>
+                    <option value="female" id="female">Kobieta</option>
+                    <option value="male" id="male">Mężczyzna</option>
+                </select>
+                <br>
+                <br><button onclick="getFullName(document.getElementById('gender').value)" id="buttonFN"
+                    class="pageBtn">Wybierz</button>
+                <h4 id="newFN">Imię i nazwisko: </h4>
+            </div>
+        </div>
+    </div>
+    <script src="fullName.js"></script>
+</body>
+
+</html>

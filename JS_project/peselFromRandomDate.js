@@ -57,10 +57,10 @@ function getPeselFromRandomDate() {
 
     buttonRP.innerHTML = "Odśwież"
     buttonRP.removeEventListener("click", getPeselFromRandomDate)
-    
+
     buttonRP.addEventListener("click", reload)
 
-    function reload(){
+    function reload() {
         location.reload()
     }
 }

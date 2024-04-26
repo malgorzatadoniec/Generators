@@ -44,10 +44,10 @@ function getPeselFromGivenDate(givenDate) {
 
     buttonGD.removeEventListener("click", getPeselFromGivenDate)
     buttonGD.innerHTML = "Odśwież"
-    
+
     buttonGD.addEventListener("click", reload)
 
-    function reload(){
+    function reload() {
         location.reload()
     }
 }
