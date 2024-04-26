@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generatory</title>
+
+</head>
+
+<body>
+    <div id="gDPHeader" class="header">
+        <div class="title">GENERATOR PESELU (dla wybranej daty z lat 1901-1999)</div>
+    </div>
+    <div id="gDPContainer" class="container">
+        <div id="gDPSquare" class="pageSquare">
+            <div id="givenDatePesel">
+                <h3>Generator numeru PESEL z podanej daty</h3>
+                <h4>Wybierz datę: </h4>
+                <input type="date" id="dateInput" min="1901-01-01" max="1999-12-31">
+                <br>
+                <br><button onclick="getPeselFromGivenDate(document.getElementById('dateInput').value)"
+                    id="buttonGD" class="pageBtn">Wygeneruj PESEL</button>
+                <br>
+                <h4 id="newGD">PESEL: </h4>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="peselFromGivenDate.js"></script>
+</body>
+
+</html>

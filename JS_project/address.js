@@ -7,7 +7,7 @@ let streetNameList = ['Grodzka', '3 Maja', 'Korfantego', 'Młyńska', 'Szewska',
 
 function getAddressData() {
 
-   
+
     const cityIndex = Math.floor(Math.random() * cityNameList.length);
     const streetIndex = Math.floor(Math.random() * streetNameList.length);
     const cityName = cityNameList[cityIndex];
@@ -17,21 +17,21 @@ function getAddressData() {
 
     const postalCodeFirstPart = Math.floor(Math.random() * 90) + 10;
     const postalCodeSecondPart = Math.floor(Math.random() * 900) + 100;
-    const postalCode = postalCodeFirstPart+"-"+postalCodeSecondPart;
+    const postalCode = postalCodeFirstPart + "-" + postalCodeSecondPart;
 
     const address = cityName + ", " + "ulica " + streetName + ", " + houseNumber + ", " + postalCode
 
     let newAdress = document.getElementById('newAdress')
     newAdress.innerHTML += address
 
-    
+
     buttonA.innerHTML = "Odśwież"
     buttonA.removeEventListener("click", getAddressData)
 
     buttonA.addEventListener("click", reload)
 
 
-    function reload(){
+    function reload() {
         location.reload()
     }
 }

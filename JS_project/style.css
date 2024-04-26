@@ -3,29 +3,37 @@
     font-size: 30px;
 }
 
-#header {
+.header {
     font-size: 50px;
     text-align: center;
-    border: 5px solid #5593ea;
-    background-color: white;
     margin-top: 50px;
     height: 100px;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    background-color: white;
+}
+
+#mainHeader {
+    border: 5px solid #5593ea;
 }
 
 #addressHeader {
-    font-size: 50px;
-    text-align: center;
     border: 5px solid #337e52;
-    background-color: white;
-    margin-top: 50px;
-    height: 100px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
 }
 
-#container {
+#nameHeader {
+    border: 5px solid #db9a0d;
+}
+
+#rPHeader {
+    border: 5px solid #a04ecf;
+}
+
+#gDPHeader {
+    border: 5px solid #2ec4ab;
+}
+
+#mainContainer {
     border: 8px solid #5593ea;
     background-color: whitesmoke;
     margin: 130px;
@@ -38,29 +46,44 @@
     justify-items: stretch;
     align-items: stretch;
     grid-template-areas:
-    "leftTop  rightTop"
-    "leftMiddle rightMiddle"
-    "leftBottom  rightBottom";
+        "leftTop  rightTop"
+        "leftMiddle rightMiddle"
+        "leftBottom  rightBottom";
 }
 
-#adressContainer {
-    border: 8px solid #337e52;
+.container {
     background-color: whitesmoke;
     margin: 130px;
-    padding: 20px;
+    padding: 30px;
     height: 500px;
     width: 1500px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 20px; 
+    grid-gap: 20px;
     justify-items: stretch;
-    align-items: stretch; 
+    align-items: stretch;
     grid-template-areas:
-    "center"; 
+        "center";
 }
 
-#title{
+#adressContainer {
+    border: 8px solid #337e52;
+}
+
+#nameContainer {
+    border: 8px solid #db9a0d;
+}
+
+#rPContainer {
+    border: 8px solid #a04ecf;
+}
+
+#gDPContainer {
+    border: 8px solid #2ec4ab;
+}
+
+.title {
     height: auto;
     min-height: 100px;
     background-color: white;
@@ -72,7 +95,7 @@
     font-weight: 500;
 }
 
-.square {
+.squareMain {
     height: auto;
     min-height: 150px;
     border: 5px solid #9fbce6;
@@ -85,42 +108,92 @@
     align-items: center;
 }
 
-.addressSquare {
+.squareMain:hover {
+    box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.75);
+    opacity: 50%;
+}
+
+.pageSquare {
     height: auto;
     min-height: 150px;
-    border: 5px solid #78a38b;
     background-color: white;
-    display: block;   
+    display: block;
     display: flex;
     padding-left: 400px;
     justify-content: left;
     align-items: center;
 }
 
-.square:hover {
-    box-shadow: 10px 20px 15px 5px rgba(0, 0, 0, 0.75);
-    opacity: 50%;
+#addressSquare {
+    border: 5px solid #78a38b;
 }
 
-#addressLink{
+#nameSquare {
+    border: 5px solid #ecc67e;
+}
+
+#rPSquare {
+    border: 5px solid #c8a0e9;
+}
+
+#gDPSquare {
+    border: 5px solid #a3dfd0;
+}
+
+
+.link {
     color: black;
     text-decoration: none;
 }
 
-#addressLink:hover{
+#addressLink:hover {
     color: #337e52;
     font-size: larger;
     font-weight: bolder;
 }
 
-#h3{
+#nameLink:hover {
+    color: #db9a0d;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#rPLink:hover {
+    color: #a04ecf;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#gDPLink:hover {
+    color: #2ec4ab;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#h3 {
     font-size: 40px;
 }
 
-#buttonA{
+.pageBtn {
     color: white;
-    background-color: #78a38b;
     border: none;
     padding: 15px;
     border-radius: 30px;
 }
+
+#buttonA {
+    background-color: #78a38b;
+}
+
+#buttonFN {
+    background-color: #ecc67e;
+}
+
+#buttonRP {
+    background-color: #c8a0e9;
+}
+
+#buttonGD {
+    background-color: #a3dfd0;
+}
+
