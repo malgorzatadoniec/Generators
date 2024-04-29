@@ -33,6 +33,10 @@
     border: 5px solid #2ec4ab;
 }
 
+#mailHeader {
+    border: 5px solid #dd38cf;
+}
+
 #mainContainer {
     border: 8px solid #5593ea;
     background-color: whitesmoke;
@@ -81,6 +85,10 @@
 
 #gDPContainer {
     border: 8px solid #2ec4ab;
+}
+
+#mailContainer {
+    border: 8px solid #dd38cf;
 }
 
 .title {
@@ -140,6 +148,10 @@
     border: 5px solid #a3dfd0;
 }
 
+#mailSquare {
+    border: 5px solid #ea9aec;
+}
+
 
 .link {
     color: black;
@@ -170,6 +182,12 @@
     font-weight: bolder;
 }
 
+#mailLink:hover {
+    color: #dd38cf;
+    font-size: larger;
+    font-weight: bolder;
+}
+
 #h3 {
     font-size: 40px;
 }
@@ -195,5 +213,9 @@
 
 #buttonGD {
     background-color: #a3dfd0;
+}
+
+#buttonM {
+    background-color: #ea9aec;
 }
 
