@@ -5,9 +5,7 @@ let femaleLName = ['Kowalik', 'Kowalska', 'Michalska', 'Suska', 'Grabowska', 'Bo
 let maleFName = ['Jakub', 'Andrzej', 'Tomasz', 'Stanisław', 'Mateusz', 'Mariusz', 'Wojciech', 'Krzysztof', 'Bartosz', 'Bartłomiej', 'Grzegorz', 'Jerzy', 'Karol', 'Kacper', 'Paweł', 'Piotr', 'Jan', 'Witold', 'Jacek']
 let maleLName = ['Kowal', 'Kowalewski', 'Michalski', 'Woronicz', 'Grabowski', 'Bojanowski', 'Adamowski', 'Więcławski', 'Solejuk', 'Wilski', 'Jędrzejewski', 'Pawłowski', 'Andrzejewski', 'Rylski', 'Wiśniewski']
 
-function getFullName(personGender) {
-
-    const gender = personGender
+function getFullName() {
 
     if (document.getElementById('gender').value == 'female') {
         const fFNameIndex = Math.floor(Math.random() * femaleFName.length)
