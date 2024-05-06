@@ -14,9 +14,7 @@ function getFullName() {
         const fLName = femaleLName[fLNameIndex]
 
         let fullName = fFName + " " + fLName
-
-        const newFullName = document.getElementById('newFN')
-        newFullName.innerHTML += fullName
+        document.getElementById('newFN').innerHTML += fullName
 
     } else if (document.getElementById('gender').value == 'male') {
         const mFNameIndex = Math.floor(Math.random() * maleFName.length)
@@ -25,9 +23,10 @@ function getFullName() {
         const mLName = maleLName[mLNameIndex]
 
         let fullName = mFName + " " + mLName
+        document.getElementById('newFN').innerHTML += fullName
 
-        const newFullName = document.getElementById('newFN')
-        newFullName.innerHTML += fullName
+    } else {
+        document.getElementById('newFN').innerHTML += "Wybierz płeć"
     }
 
     buttonFN.innerHTML = "Odśwież"

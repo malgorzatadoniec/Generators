@@ -52,8 +52,7 @@ function getPeselFromRandomDate() {
         + seventhNo.toString() + eightNo.toString() + ninthNo.toString()
         + tenthNo.toString() + eleventhNo.toString()
 
-    let addPesel = document.getElementById('newRP')
-    addPesel.innerHTML += peselRD
+    document.getElementById('newRP').innerHTML += peselRD
 
     buttonRP.innerHTML = "Odśwież"
     buttonRP.removeEventListener("click", getPeselFromRandomDate)

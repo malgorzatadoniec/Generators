@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generatory</title>
+
+</head>
+
+<body>
+    <div id="mobileHeader" class="header">
+        <div class="title">GENERATOR NUMERU KOMÓRKOWEGO (dla PL, GB, FR i DE)</div>
+    </div>
+    <div id="mobileContainer" class="container">
+        <div id="mobileSquare" class="pageSquare">
+            <div id="mobileList">
+                <h3>Generator numeru komórkowego dla wybranego kraju</h3>
+                <label for="mobile">Wybierz kraj:</label>
+                <select name="mobile" id="mobile">
+                    <option value="default" id="default">----</option>
+                    <option value="PL" id="PL">PL</option>
+                    <option value="GB" id="GB">GB</option>
+                    <option value="FR" id="FR">FR</option>
+                    <option value="DE" id="DE">DE</option>
+                </select>
+                <br>
+                <br><button onclick="getMobile(document.getElementById('mobile').value)" id="buttonMob"
+                    class="pageBtn">Wybierz</button>
+                <h4 id="newMobile">Numer komórkowy: </h4>
+            </div>
+        </div>
+    </div>
+    <script src="mobile.js"></script>
+</body>
+
+</html>
+

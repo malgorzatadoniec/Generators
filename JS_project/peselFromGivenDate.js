@@ -39,8 +39,7 @@ function getPeselFromGivenDate(givenDate) {
         + seventhNo.toString() + eightNo.toString() + ninthNo.toString()
         + tenthNo.toString() + eleventhNo.toString()
 
-    let addPesel = document.getElementById('newGD')
-    addPesel.innerHTML += peselGD
+    document.getElementById('newGD').innerHTML += peselGD
 
     buttonGD.removeEventListener("click", getPeselFromGivenDate)
     buttonGD.innerHTML = "Odśwież"
