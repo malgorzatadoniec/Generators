@@ -21,8 +21,7 @@ function getAddressData() {
 
     const address = cityName + ", " + "ulica " + streetName + ", " + houseNumber + ", " + postalCode
 
-    let newAdress = document.getElementById('newAdress')
-    newAdress.innerHTML += address
+    document.getElementById('newAdress').innerHTML += address
 
 
     buttonA.innerHTML = "Odśwież"

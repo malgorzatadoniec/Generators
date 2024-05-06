@@ -18,9 +18,7 @@ function getMail() {
     const mailLast = lastPart[lPIndex]
 
     const mail = mailBegining + mailMiddle + mailLast
-
-    let newMail = document.getElementById('newMail')
-    newMail.innerHTML += mail
+    document.getElementById('newMail').innerHTML += mail
 
 
     buttonM.innerHTML = "Odśwież"

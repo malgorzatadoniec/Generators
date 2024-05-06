@@ -37,6 +37,10 @@
     border: 5px solid #dd38cf;
 }
 
+#mobileHeader {
+    border: 5px solid #dd5938;
+}
+
 #mainContainer {
     border: 8px solid #5593ea;
     background-color: whitesmoke;
@@ -89,6 +93,10 @@
 
 #mailContainer {
     border: 8px solid #dd38cf;
+}
+
+#mobileContainer {
+    border: 8px solid #dd5938;
 }
 
 .title {
@@ -152,6 +160,10 @@
     border: 5px solid #ea9aec;
 }
 
+#mobileSquare {
+    border: 5px solid #f5a672;
+}
+
 
 .link {
     color: black;
@@ -188,6 +200,12 @@
     font-weight: bolder;
 }
 
+#mobileLink:hover {
+    color: #dd5938;
+    font-size: larger;
+    font-weight: bolder;
+}
+
 #h3 {
     font-size: 40px;
 }
@@ -219,3 +237,6 @@
     background-color: #ea9aec;
 }
 
+#buttonMob {
+    background-color: #f5a672;
+}
