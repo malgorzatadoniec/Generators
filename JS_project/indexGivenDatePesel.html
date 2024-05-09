@@ -19,13 +19,13 @@
             <div id="givenDatePesel">
                 <h3>Generator numeru PESEL z podanej daty</h3>
                 <h4>Wybierz datę: </h4>
-                <input type="date" id="dateInput" min="1901-01-01" max="1999-12-31">
+                <input type="date" id="dateInput" min="1900-01-01" max="2024-12-31">
                 <br>
                 <br><button onclick="getPeselFromGivenDate(document.getElementById('dateInput').value)"
                     id="buttonGD" class="pageBtn">Wygeneruj PESEL</button>
                 <br>
                 <h4 id="newGD">PESEL: </h4>
-                <br>
+                <h4 id="message"></h4>
             </div>
         </div>
     </div>
