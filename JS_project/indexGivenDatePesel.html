@@ -12,14 +12,14 @@
 
 <body>
     <div id="gDPHeader" class="header">
-        <div class="title">GENERATOR PESELU (dla wybranej daty z lat 1901-1999)</div>
+        <div class="title">GENERATOR PESELU (dla wybranej daty z lat 1900-2099)</div>
     </div>
     <div id="gDPContainer" class="container">
         <div id="gDPSquare" class="pageSquare">
             <div id="givenDatePesel">
                 <h3>Generator numeru PESEL z podanej daty</h3>
                 <h4>Wybierz datę: </h4>
-                <input type="date" id="dateInput" min="1900-01-01" max="2024-12-31">
+                <input type="date" id="dateInput" min="1900-01-01" max="2099-12-31">
                 <br>
                 <br><button onclick="getPeselFromGivenDate(document.getElementById('dateInput').value)"
                     id="buttonGD" class="pageBtn">Wygeneruj PESEL</button>
